@@ -1,0 +1,63 @@
+
+import { cmp, Content, modelText } from '@voxgig/sdkgen'
+
+import {
+  KIT,
+  getModelPath,
+  nom,
+} from '@voxgig/apidef'
+
+
+const ReadmeIntro = cmp(function ReadmeIntro(props: any) {
+  const { target, ctx$: { model } } = props
+  const info = modelText(model)
+  const tagline = info.tagline || ''
+
+  const entity = getModelPath(model, `main.${KIT}.entity`)
+  const exampleEntity = Object.values(entity).find((e: any) => e.active !== false) as any
+  const eName = exampleEntity ? nom(exampleEntity, 'Name') : 'Entity'
+
+  // Model-driven op list — only the operations the active entities actually
+  // expose (a read-only entity has just list+load); never claim
+  // create/update/remove exist when no entity has them.
+  const CANON_OPS = ['list', 'load', 'create', 'update', 'patch', 'remove']
+  const opSet = new Set<string>()
+  Object.values(entity || {}).forEach((e: any) => {
+    if (!e || e.active === false) return
+    Object.keys(e.op || {}).forEach((o: string) => {
+      if (e.op[o] && e.op[o].active !== false) opSet.add(o)
+    })
+  })
+  const opNames = CANON_OPS.filter((o) => opSet.has(o))
+    .concat([...opSet].filter((o) => !CANON_OPS.includes(o)))
+  const opList = (opNames.length ? opNames : ['list', 'load'])
+    .map((o) => '`' + o + '`').join(', ')
+
+  const targets = getModelPath(model, `main.${KIT}.target`) || {}
+  const siblings = Object.entries(targets)
+    .filter(([name, t]: any) => name !== target.name && false !== t.active)
+    .map(([name]: any) => name)
+    .sort()
+
+  const siblingNote = 0 === siblings.length ? '' : `
+> Also generated from this model: ${siblings.map((s: string) => '`' + s + '`').join(', ')} — see
+> the [top-level README](../README.md).
+`
+
+  Content(`# ${model.Name} ${target.title} SDK
+
+${tagline}
+
+This client was generated from the ${model.Name} OpenAPI specification using
+Voxgig SDK tools.
+
+Access resources through entity methods such as \`client.${eName}()\`.
+Available operations include ${opList}, depending on the resource.
+${siblingNote}
+`)
+})
+
+
+export {
+  ReadmeIntro
+}
