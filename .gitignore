@@ -1,0 +1,27 @@
+# Local settings and secrets
+*.local
+*.local.*
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules
+dist/
+dist-test/
+*.tsbuildinfo
+coverage/
+
+# Logs and caches
+*.log
+logs/
+.npm/
+.cache/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp

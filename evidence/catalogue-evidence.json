@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-10-15",
+  "checked_date": "2026-10-14",
+  "organization": "voxgig-sdk",
+  "catalogue_url": "https://github.com/orgs/voxgig-sdk/repositories",
+  "source": "GitHub REST API GET /orgs/voxgig-sdk/repos; all 9 pages fetched, per_page=100",
+  "source_urls": [
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=1",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=2",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=3",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=4",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=5",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=6",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=7",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=8",
+    "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page=9"
+  ],
+  "page_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    4
+  ],
+  "repository_count": 804,
+  "search_term": "resend",
+  "searched_fields": [
+    "name",
+    "description"
+  ],
+  "matching_repositories": [],
+  "method": "Case-insensitive substring search of every repository name and description."
+}

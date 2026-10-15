@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-10-15",
+  "upstream_repository": "https://github.com/resend/resend-openapi",
+  "source_commit": "a6d5e1e5674e83f0517e09b91e52a4d6cfc2535c",
+  "source_commit_url": "https://github.com/resend/resend-openapi/commit/a6d5e1e5674e83f0517e09b91e52a4d6cfc2535c",
+  "source_commit_date": "2026-10-14T13:26:39Z",
+  "openapi": "3.1.2",
+  "info": {
+    "title": "Resend",
+    "version": "1.5.1",
+    "description": "Resend is the email platform for developers."
+  },
+  "paths": 87,
+  "operations": 139,
+  "files": [
+    {
+      "filename": "resend.json",
+      "source_url": "https://raw.githubusercontent.com/resend/resend-openapi/a6d5e1e5674e83f0517e09b91e52a4d6cfc2535c/resend.json",
+      "bytes": 500744,
+      "sha256": "482f7ee680c10a8662b21f522176b2c3772ee30f8f941a2f7caf612a436a9258"
+    },
+    {
+      "filename": "resend.yaml",
+      "source_url": "https://raw.githubusercontent.com/resend/resend-openapi/a6d5e1e5674e83f0517e09b91e52a4d6cfc2535c/resend.yaml",
+      "bytes": 370087,
+      "sha256": "2f112d83fd899edac190bb1f46a3f4a4bfc2c3f71f412ccc035681eb061430f4",
+      "repository_path": ".sdk/def/resend.yaml"
+    },
+    {
+      "filename": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/resend/resend-openapi/a6d5e1e5674e83f0517e09b91e52a4d6cfc2535c/LICENSE",
+      "bytes": 1060,
+      "sha256": "ae5e2657060393e9f3441bae84c5587c0e7848094fd1101bd72fbb307a058fe9",
+      "repository_path": "third-party/resend-openapi/LICENSE"
+    }
+  ]
+}
