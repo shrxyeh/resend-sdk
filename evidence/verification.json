@@ -1,0 +1,165 @@
+{
+  "report_date": "2026-10-15",
+  "author": "Shreyash Naik",
+  "checked_date": "2026-10-14",
+  "node": "24.21.0",
+  "create_sdkgen": "0.30.7",
+  "apidef": "8.25.2",
+  "sdkgen": "4.34.5",
+  "model": "12.0.1",
+  "docgen": "0.30.1",
+  "generation": {
+    "exit_code": 0
+  },
+  "typescript_build": {
+    "exit_code": 0,
+    "command": "npm test (pretest runs npm run build)"
+  },
+  "doctor": {
+    "exit_code": 0,
+    "result": "matches the scaffold (0 additive)"
+  },
+  "offline_suite": {
+    "exit_code": 1,
+    "test_files": 142,
+    "passed": 140,
+    "failed": 2,
+    "log": "final-offline-tests.txt"
+  },
+  "live_smoke": {
+    "exit_code": 0,
+    "method": "GET",
+    "path": "/domains",
+    "http_status": 200,
+    "returned_domains": 0,
+    "log": "live-domain-test.json"
+  },
+  "scope_limit": "One live read verified. No live writes, multi-page pagination, or comprehensive API validation.",
+  "human_minutes_reported": [
+    20,
+    25
+  ],
+  "ai_assisted": true,
+  "publication_cleanup": {
+    "checked_date": "2026-10-15",
+    "generation_exit_code": 0,
+    "typescript_build_exit_code": 0,
+    "offline_suite": {
+      "exit_code": 1,
+      "test_files": 142,
+      "passed": 140,
+      "failed": 2,
+      "log": "publication-offline-tests.txt",
+      "result": "Same two generator failures as the original evaluation."
+    },
+    "doctor": {
+      "exit_code": 1,
+      "log": "publication-doctor.txt",
+      "result": "Reports four intentional customizations; no stale, missing, or outdated files.",
+      "customized_files": [
+        ".sdk/src/cmp/ts/Gitignore_ts.ts",
+        ".sdk/src/cmp/ts/ReadmeInstall_ts.ts",
+        ".sdk/src/cmp/ts/ReadmeIntro_ts.ts",
+        ".sdk/tm/ts/Makefile"
+      ]
+    },
+    "compiled_files_removed_from_tracking": 698,
+    "secret_checks": {
+      "history_checked_through": "e2e2f92",
+      "history_commits_checked": 4,
+      "history_blobs_checked": 1450,
+      "history_exact_key_matches": 0,
+      "staged_exact_key_matches": 0,
+      "staged_credential_pattern_matches": 0,
+      "env_local_ignored": true,
+      "env_example_has_empty_value": true
+    }
+  },
+  "final_e2e_sanity": {
+    "checked_at": "2026-10-15T06:57:57+00:00",
+    "source_commit": "e462396e5aaacd12d855be379d95674d78e62ffb",
+    "node": "24.21.0",
+    "clean_clone": {
+      "generator_npm_ci_exit_code": 0,
+      "sdk_npm_ci_exit_code": 0,
+      "generation_exit_code": 0,
+      "tracked_diff_after_generation": "empty",
+      "final_git_status": "clean",
+      "env_local_copied": false,
+      "install_note": "Used locked dependency versions; missing local cache entries were downloaded from the npm registry."
+    },
+    "typescript_build_exit_code": 0,
+    "offline_suite": {
+      "exit_code": 1,
+      "test_files": 142,
+      "passed": 140,
+      "failed": 2,
+      "new_failures": 0,
+      "log": "publication-offline-tests.txt"
+    },
+    "doctor": {
+      "exit_code": 1,
+      "forked_components": 3,
+      "edited_templates": 1,
+      "stale": 0,
+      "missing": 0,
+      "outdated": 0,
+      "result": "Only the four documented project customizations.",
+      "log": "publication-doctor.txt"
+    },
+    "package": {
+      "pack_exit_code": 0,
+      "consumer_install_exit_code": 0,
+      "files": 528,
+      "archive_bytes": 314151,
+      "runtime_and_declarations_present": true,
+      "env_dependencies_generator_and_test_builds_excluded": true,
+      "published": false
+    },
+    "consumer_checks": {
+      "commonjs_import_and_mocked_authenticated_domain_list_exit_code": 0,
+      "esm_named_import_and_mocked_domain_list_exit_code": 0,
+      "strict_typescript_compile_exit_code": 0,
+      "typescript": "5.9.3",
+      "skipLibCheck": false,
+      "module_resolution": "NodeNext"
+    },
+    "live_smoke": {
+      "exit_code": 0,
+      "method": "GET",
+      "path": "/domains",
+      "http_status": 200,
+      "returned_domains": 0,
+      "response_shape_assertions": "passed",
+      "sdk_source": "Freshly generated and compiled clean clone"
+    },
+    "missing_key_handling": {
+      "exit_code": 1,
+      "result": "Clear setup instructions, as expected."
+    },
+    "publication_checks": {
+      "history_commits_checked": 5,
+      "history_blobs_checked": 1468,
+      "exact_key_matches": 0,
+      "credential_pattern_matches": 0,
+      "tracked_environment_files": [
+        ".env.example"
+      ],
+      "env_local_ignored": true,
+      "env_local_permissions": "0600",
+      "tracked_dependencies_builds_and_archives": 0,
+      "broken_relative_documentation_links": 0,
+      "mit_author_verified": "Shreyash Naik",
+      "upstream_spec_and_license_checksums": "matched",
+      "workflow": "Offline TypeScript tests; the two known failures remain visible."
+    },
+    "scope_limit": "One live read verified. No live writes, email sending, multi-page pagination, or comprehensive API validation."
+  },
+  "github_repository": "https://github.com/shrxyeh/resend-sdk",
+  "publication_history": {
+    "commits": 5,
+    "previous_local_head": "5c13e00e81a74f1f4ca3b406779c736939ff2c63",
+    "verified_sdk_and_documentation_unchanged": true,
+    "note": "The unpublished local history was reorganized into five publication commits. Earlier commit IDs in this record refer to the original local evaluation history, retained in a local backup. The verified SDK, generator, tests, examples, and documentation are unchanged."
+  }
+}

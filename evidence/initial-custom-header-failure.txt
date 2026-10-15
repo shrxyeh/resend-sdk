@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: PrimaryUtility
+    # Subtest: exists
+    ok 1 - exists
+      ---
+      duration_ms: 8.433148
+      type: 'test'
+      ...
+    # Subtest: context-basic
+    ok 2 - context-basic
+      ---
+      duration_ms: 6.114898
+      type: 'test'
+      ...
+    # Subtest: method-basic
+    ok 3 - method-basic
+      ---
+      duration_ms: 10.367314
+      type: 'test'
+      ...
+    # Subtest: headers-basic
+    not ok 4 - headers-basic
+      ---
+      duration_ms: 6.499256
+      type: 'test'
+      location: '/home/shrxyeh/voxgig/resend-sdk/ts/dist-test/utility/PrimaryUtility.test.js:63:26'
+      failureType: 'testCodeFailure'
+      error: |-
+        omni: primary[0]: result mismatch
+          expected: {"content-type":"application/json"}
+          actual:   {"User-Agent":"shrxyeh-resend-sdk/0.0.1","content-type":"application/json"}
+          entry:    {"out":{"content-type":"application/json"}}
+      code: 'ERR_TEST_FAILURE'
+      name: 'OmniError'
+      stack: |-
+        fail (/home/shrxyeh/voxgig/resend-sdk/ts/dist-test/vendor/omni/Runner.js:272:12)
+        checkresult (/home/shrxyeh/voxgig/resend-sdk/ts/dist-test/vendor/omni/Runner.js:309:15)
+        runsetflags (/home/shrxyeh/voxgig/resend-sdk/ts/dist-test/vendor/omni/Runner.js:456:21)
+      ...
+    # Subtest: auth-basic
+    ok 5 - auth-basic
+      ---
+      duration_ms: 46.701127
+      type: 'test'
+      ...
+    # Subtest: params-basic
+    ok 6 - params-basic
+      ---
+      duration_ms: 3.275524
+      type: 'test'
+      ...
+    # Subtest: query-basic
+    ok 7 - query-basic
+      ---
+      duration_ms: 6.216098
+      type: 'test'
+      ...
+    # Subtest: body-basic
+    ok 8 - body-basic
+      ---
+      duration_ms: 5.193465
+      type: 'test'
+      ...
+    # Subtest: findparam-basic
+    ok 9 - findparam-basic
+      ---
+      duration_ms: 12.363722
+      type: 'test'
+      ...
+    # Subtest: fullurl-basic
+    ok 10 - fullurl-basic
+      ---
+      duration_ms: 2.953499
+      type: 'test'
+      ...
+    # Subtest: operator-basic
+    ok 11 - operator-basic
+      ---
+      duration_ms: 1.691616
+      type: 'test'
+      ...
+    # Subtest: options-basic
+    ok 12 - options-basic
+      ---
+      duration_ms: 30.609416
+      type: 'test'
+      ...
+    # Subtest: spec-basic
+    ok 13 - spec-basic
+      ---
+      duration_ms: 22.731584
+      type: 'test'
+      ...
+    # Subtest: reqform-basic
+    ok 14 - reqform-basic
+      ---
+      duration_ms: 1.046925
+      type: 'test'
+      ...
+    # Subtest: resform-basic
+    ok 15 - resform-basic
+      ---
+      duration_ms: 1.005675
+      type: 'test'
+      ...
+    # Subtest: resbasic-basic
+    ok 16 - resbasic-basic
+      ---
+      duration_ms: 5.282657
+      type: 'test'
+      ...
+    # Subtest: resheaders-basic
+    ok 17 - resheaders-basic
+      ---
+      duration_ms: 1.404791
+      type: 'test'
+      ...
+    # Subtest: resbody-basic
+    ok 18 - resbody-basic
+      ---
+      duration_ms: 1.081299
+      type: 'test'
+      ...
+    # Subtest: resbody-empty
+    ok 19 - resbody-empty
+      ---
+      duration_ms: 117.521397
+      type: 'test'
+      ...
+    # Subtest: request-basic
+    ok 20 - request-basic
+      ---
+      duration_ms: 13.304313
+      type: 'test'
+      ...
+    # Subtest: response-basic
+    ok 21 - response-basic
+      ---
+      duration_ms: 3.514132
+      type: 'test'
+      ...
+    # Subtest: done-basic
+    ok 22 - done-basic
+      ---
+      duration_ms: 5.49404
+      type: 'test'
+      ...
+    # Subtest: error-basic
+    ok 23 - error-basic
+      ---
+      duration_ms: 6.814315
+      type: 'test'
+      ...
+    # Subtest: makePoint-basic
+    ok 24 - makePoint-basic
+      ---
+      duration_ms: 1.888608
+      type: 'test'
+      ...
+    # Subtest: makeFetchDef
+    ok 25 - makeFetchDef
+      ---
+      duration_ms: 0.78925
+      type: 'test'
+      ...
+    # Subtest: makeFetchDef-with-body
+    ok 26 - makeFetchDef-with-body
+      ---
+      duration_ms: 0.41305
+      type: 'test'
+      ...
+    # Subtest: featureAdd
+    ok 27 - featureAdd
+      ---
+      duration_ms: 0.278942
+      type: 'test'
+      ...
+    # Subtest: featureHook
+    ok 28 - featureHook
+      ---
+      duration_ms: 0.713625
+      type: 'test'
+      ...
+    # Subtest: featureInit
+    ok 29 - featureInit
+      ---
+      duration_ms: 0.482625
+      type: 'test'
+      ...
+    # Subtest: featureInit-inactive
+    ok 30 - featureInit-inactive
+      ---
+      duration_ms: 0.23815
+      type: 'test'
+      ...
+    # Subtest: fetcher-live
+    ok 31 - fetcher-live
+      ---
+      duration_ms: 12.965329
+      type: 'test'
+      ...
+    # Subtest: fetcher-blocked-test-mode
+    ok 32 - fetcher-blocked-test-mode
+      ---
+      duration_ms: 11.064897
+      type: 'test'
+      ...
+    # Subtest: makeError-no-throw
+    ok 33 - makeError-no-throw
+      ---
+      duration_ms: 0.527725
+      type: 'test'
+      ...
+    # Subtest: path-basic
+    ok 34 - path-basic
+      ---
+      duration_ms: 0.532675
+      type: 'test'
+      ...
+    # Subtest: clean-corpus
+    ok 35 - clean-corpus
+      ---
+      duration_ms: 0.63415
+      type: 'test'
+      ...
+    # Subtest: clean
+    ok 36 - clean
+      ---
+      duration_ms: 0.338617
+      type: 'test'
+      ...
+    1..36
+not ok 1 - PrimaryUtility
+  ---
+  duration_ms: 445.083512
+  type: 'suite'
+  location: '/home/shrxyeh/voxgig/resend-sdk/ts/dist-test/utility/PrimaryUtility.test.js:7:26'
+  failureType: 'subtestsFailed'
+  error: '1 subtest failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+1..1
+# tests 36
+# suites 1
+# pass 35
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 735.413389

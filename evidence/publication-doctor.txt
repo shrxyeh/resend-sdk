@@ -1,0 +1,8 @@
+[12:21:34.432] INFO: sdkgen                 doctor-start
+[12:21:34.505] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/Gitignore_ts.ts
+[12:21:34.505] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/ReadmeInstall_ts.ts
+[12:21:34.505] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/ReadmeIntro_ts.ts
+[12:21:34.506] INFO: sdkgen                 doctor-finding       EDITED template master: tm/ts/Makefile
+[12:21:34.506] INFO: sdkgen                 doctor-end           .sdk has drifted: 3 forked, 1 edited, 0 stale, 0 missing, 0 outdated
+
+.sdk has drifted from the scaffold: 3 forked, 1 edited, 0 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.
